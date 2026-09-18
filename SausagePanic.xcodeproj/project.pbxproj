@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	"archiveVersion" = 1;
+	"classes" = {
+	};
+	"objectVersion" = 56;
+	"objects" = {
+		"000000000000000000000064" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "GameCore.swift";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000000C8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 000000000000000000000064;
+		};
+		"000000000000000000000065" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "SausagePanicApp.swift";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000000C9" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 000000000000000000000065;
+		};
+		"000000000000000000000066" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "KitchenScene.swift";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000000CA" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 000000000000000000000066;
+		};
+		"000000000000000000000067" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "GameStore.swift";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000000CB" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 000000000000000000000067;
+		};
+		"000000000000000000000068" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "GameScreen.swift";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000000CC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 000000000000000000000068;
+		};
+		"00000000000000000000012C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.wav";
+			"path" = "Sounds/boing.wav";
+			"sourceTree" = "<group>";
+		};
+		"000000000000000000000190" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 00000000000000000000012C;
+		};
+		"00000000000000000000012D" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.wav";
+			"path" = "Sounds/ding.wav";
+			"sourceTree" = "<group>";
+		};
+		"000000000000000000000191" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 00000000000000000000012D;
+		};
+		"00000000000000000000012E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.wav";
+			"path" = "Sounds/sizzle.wav";
+			"sourceTree" = "<group>";
+		};
+		"000000000000000000000192" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 00000000000000000000012E;
+		};
+		"00000000000000000000012F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.xml";
+			"path" = "PrivacyInfo.xcprivacy";
+			"sourceTree" = "<group>";
+		};
+		"000000000000000000000193" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = 00000000000000000000012F;
+		};
+		"0000000000000000000001F4" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "text.plist.xml";
+			"path" = "Info.plist";
+			"sourceTree" = "<group>";
+		};
+		"0000000000000000000001F5" = {
+			"isa" = "PBXFileReference";
+			"explicitFileType" = "wrapper.application";
+			"includeInIndex" = 0;
+			"path" = "SausagePanic.app";
+			"sourceTree" = "BUILT_PRODUCTS_DIR";
+		};
+		"00000000000000000000000A" = {
+			"isa" = "PBXGroup";
+			"children" = ( 00000000000000000000000B, 00000000000000000000000C , );
+			"sourceTree" = "<group>";
+		};
+		"00000000000000000000000B" = {
+			"isa" = "PBXGroup";
+			"children" = ( 000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000068, 00000000000000000000012C, 00000000000000000000012D, 00000000000000000000012E, 00000000000000000000012F, 0000000000000000000001F4 , );
+			"path" = "SausagePanic";
+			"sourceTree" = "<group>";
+		};
+		"00000000000000000000000C" = {
+			"isa" = "PBXGroup";
+			"children" = ( 0000000000000000000001F5 , );
+			"name" = "Products";
+			"sourceTree" = "<group>";
+		};
+		"000000000000000000000014" = {
+			"isa" = "PBXSourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( 0000000000000000000000C8, 0000000000000000000000C9, 0000000000000000000000CA, 0000000000000000000000CB, 0000000000000000000000CC , );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"000000000000000000000015" = {
+			"isa" = "PBXResourcesBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = ( 000000000000000000000190, 000000000000000000000191, 000000000000000000000192, 000000000000000000000193 , );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"000000000000000000000016" = {
+			"isa" = "PBXFrameworksBuildPhase";
+			"buildActionMask" = 2147483647;
+			"files" = (  );
+			"runOnlyForDeploymentPostprocessing" = 0;
+		};
+		"00000000000000000000001E" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf";
+				"GCC_OPTIMIZATION_LEVEL" = "0";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "DEBUG";
+			};
+			"name" = "Debug";
+		};
+		"00000000000000000000001F" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CLANG_ENABLE_MODULES" = "YES";
+				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
+				"SDKROOT" = "iphoneos";
+				"SWIFT_VERSION" = "5.0";
+				"DEBUG_INFORMATION_FORMAT" = "dwarf-with-dsym";
+				"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+				"SWIFT_COMPILATION_MODE" = "wholemodule";
+			};
+			"name" = "Release";
+		};
+		"000000000000000000000020" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "SausagePanic/Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = ( "$(inherited)", "@executable_path/Frameworks" , );
+				"MARKETING_VERSION" = "0.1.0";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.sausagepanic";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"ENABLE_PREVIEWS" = "YES";
+			};
+			"name" = "Debug";
+		};
+		"000000000000000000000021" = {
+			"isa" = "XCBuildConfiguration";
+			"buildSettings" = {
+				"CODE_SIGN_STYLE" = "Automatic";
+				"CURRENT_PROJECT_VERSION" = "1";
+				"GENERATE_INFOPLIST_FILE" = "NO";
+				"INFOPLIST_FILE" = "SausagePanic/Info.plist";
+				"LD_RUNPATH_SEARCH_PATHS" = ( "$(inherited)", "@executable_path/Frameworks" , );
+				"MARKETING_VERSION" = "0.1.0";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.example.sausagepanic";
+				"PRODUCT_NAME" = "$(TARGET_NAME)";
+				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+				"SWIFT_VERSION" = "5.0";
+				"TARGETED_DEVICE_FAMILY" = "1";
+				"ENABLE_PREVIEWS" = "YES";
+			};
+			"name" = "Release";
+		};
+		"000000000000000000000028" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( 00000000000000000000001E, 00000000000000000000001F , );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"000000000000000000000029" = {
+			"isa" = "XCConfigurationList";
+			"buildConfigurations" = ( 000000000000000000000020, 000000000000000000000021 , );
+			"defaultConfigurationIsVisible" = 0;
+			"defaultConfigurationName" = "Release";
+		};
+		"000000000000000000000002" = {
+			"isa" = "PBXNativeTarget";
+			"buildConfigurationList" = 000000000000000000000029;
+			"buildPhases" = ( 000000000000000000000014, 000000000000000000000016, 000000000000000000000015 , );
+			"buildRules" = (  );
+			"dependencies" = (  );
+			"name" = "SausagePanic";
+			"productName" = "SausagePanic";
+			"productReference" = 0000000000000000000001F5;
+			"productType" = "com.apple.product-type.application";
+		};
+		"000000000000000000000001" = {
+			"isa" = "PBXProject";
+			"attributes" = {
+				"BuildIndependentTargetsInParallel" = "YES";
+				"LastSwiftUpdateCheck" = "1500";
+				"LastUpgradeCheck" = "1500";
+				"TargetAttributes" = {
+					"000000000000000000000002" = {
+						"CreatedOnToolsVersion" = "15.0";
+					};
+				};
+			};
+			"buildConfigurationList" = 000000000000000000000028;
+			"compatibilityVersion" = "Xcode 14.0";
+			"developmentRegion" = "en";
+			"hasScannedForEncodings" = 0;
+			"knownRegions" = ( "en", "Base" , );
+			"mainGroup" = 00000000000000000000000A;
+			"productRefGroup" = 00000000000000000000000C;
+			"projectDirPath" = "";
+			"projectRoot" = "";
+			"targets" = ( 000000000000000000000002 , );
+		};
+	};
+	"rootObject" = 000000000000000000000001;
+}
