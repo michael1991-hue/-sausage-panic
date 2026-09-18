@@ -6,7 +6,7 @@ A native iPhone arcade-game prototype: pull back, fling a glossy sausage across 
 
 1. Open `SausagePanic.xcodeproj` in Xcode 15 or newer on a Mac.
 2. Select the **SausagePanic** scheme and an iPhone simulator, then Run.
-3. For a physical phone, select your Apple development team under Signing & Capabilities, replace the example bundle ID with one you control, then Run.
+3. For a physical phone, select your Apple development team under Signing & Capabilities, register `com.michaelwaters.sausagepanic` in your developer account, then Run.
 
 Requires iOS 17 or newer. No downloaded art packs, dependencies, server, API keys or account are needed.
 
@@ -35,7 +35,7 @@ The sausage and kitchen use resolution-independent 3D geometry, not upscaled low
 
 ## Validation status
 
-Source packaging, XML property lists, sound files and Xcode project references were checked during creation. Xcode and Swift are unavailable in the creation environment, so **the app has not been compiled or run on an iPhone/simulator, and the Swift tests have not yet executed**. Run the included workflow after uploading, then test on a physical device. Treat this as source for a prototype, not an App Store-ready build.
+The initial game-core tests and iPhone simulator build passed in GitHub Actions on 18 September 2026. Physical-device gameplay testing and signed TestFlight upload are still pending. The icon and distribution setup are validated separately by the next CI run.
 
 Commands on a Mac:
 
@@ -48,10 +48,14 @@ xcodebuild -project SausagePanic.xcodeproj -scheme SausagePanic \
 
 ## Before release
 
-Complete a successful build, physical-device gameplay/performance testing and launch-tuning pass. Add the final app icon and screenshots, production art/audio, signing, App Store metadata, and any desired Game Center leaderboard integration. SceneKit is used for this compact prototype; consider a supported long-term rendering architecture before expanding production scope. There are no ads, subscriptions, purchases or analytics in this version.
+Complete a successful build, physical-device gameplay/performance testing and launch-tuning pass. Add screenshots, production art/audio, signing, App Store metadata, and any desired Game Center leaderboard integration. SceneKit is used for this compact prototype; consider a supported long-term rendering architecture before expanding production scope. There are no ads, subscriptions, purchases or analytics in this version.
 
 ## Development
 
 The included GitHub Actions workflow runs core tests and compiles the simulator app on every push.
 
 Project layout: `GameCore.swift` owns gameplay, `KitchenScene.swift` renders it, `GameStore.swift` handles lifecycle/progression, and `GameScreen.swift` supplies the interface. The Swift package tests only the portable game core; the Xcode project builds the full app.
+
+## TestFlight
+
+Bundle ID: `com.michaelwaters.sausagepanic`. See [TESTFLIGHT.md](TESTFLIGHT.md) for app creation and secure GitHub signing setup. The upload workflow runs only when manually requested.
